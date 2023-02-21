@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1100.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.pi.controller.AppointmentPatientController">
+   <children>
+      <Label layoutX="410.0" layoutY="14.0" prefHeight="46.0" prefWidth="612.0" text="PRENDRE UN RENDEZ-VOUS" textFill="#009688">
+         <font>
+            <Font name="Georgia" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="251.0" fitWidth="255.0" layoutX="43.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="-11.0" layoutY="-38.0" prefHeight="886.0" prefWidth="308.0" style="-fx-background-color: #A1E3E4;" />
+      <Button fx:id="button_modifier" layoutX="965.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#updateClicked" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #1D81E4; -fx-background-radius: 00;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="line_date" layoutX="326.0" layoutY="345.0" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="line_hour" alignment="CENTER" layoutX="650.0" layoutY="345.0" prefHeight="31.0" prefWidth="42.0" promptText="hh" />
+      <Label layoutX="321.0" layoutY="319.0" prefHeight="21.0" prefWidth="156.0" text="Selectionner Date:" />
+      <Label layoutX="633.0" layoutY="315.0" text="Selectionner Heure:" />
+      <Button fx:id="btnAcceuil" layoutX="930.0" layoutY="784.0" mnemonicParsing="false" onAction="#retourAcceuil" prefHeight="43.0" prefWidth="156.0" style="-fx-background-color: #009688; -fx-background-radius: 0;" text="Acceuil" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="473.0" layoutY="263.0" prefHeight="18.0" prefWidth="58.0" text="Nom :" />
+      <Label layoutX="713.0" layoutY="258.0" text="Adresse :" />
+      <Label fx:id="nomDoc" layoutX="535.0" layoutY="263.0" text="Label" />
+      <Label fx:id="specialiteDoc" layoutX="789.0" layoutY="259.0" text="Label" />
+      <ImageView blendMode="SRC_ATOP" fitHeight="127.0" fitWidth="807.0" layoutX="308.0" layoutY="93.0" pickOnBounds="true" />
+      <ListView fx:id="list_collection" layoutX="326.0" layoutY="395.0" onMouseClicked="#select" prefHeight="200.0" prefWidth="699.0" />
+      <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="89.0" layoutY="242.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="206.0" style="-fx-background-color: #A1E3E4;" text="COMPTE" textFill="#140e0e" textOverrun="WORD_ELLIPSIS">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="86.0" layoutY="303.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="206.0" style="-fx-background-color: #A1E3E4;" text="RENDEZ-VOUS" textFill="#171616">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="88.0" layoutY="375.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="206.0" style="-fx-background-color: #A1E3E4;" text="RECLAMATION" textFill="#171616">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="88.0" layoutY="447.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="206.0" style="-fx-background-color: #A1E3E4;" text="SETTINGS" textFill="#222020">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="906.0" layoutY="258.0" prefHeight="21.0" prefWidth="26.0" text="ID " />
+      <Label fx:id="label_id" layoutX="956.0" layoutY="258.0" prefHeight="21.0" prefWidth="100.0" text="Label" />
+      <TextField fx:id="line_min" alignment="CENTER" layoutX="705.0" layoutY="345.0" prefHeight="31.0" prefWidth="42.0" promptText="mm" />
+      <Label layoutX="697.0" layoutY="349.0" prefHeight="21.0" prefWidth="0.0" text=":" />
+      <Button layoutX="834.0" layoutY="812.0" mnemonicParsing="false" onMouseClicked="#refreshClicked" prefHeight="31.0" prefWidth="71.0" text="Refresh" />
+      <ListView fx:id="list_collection2" layoutX="326.0" layoutY="616.0" onMouseClicked="#select2" prefHeight="160.0" prefWidth="699.0" />
+      <Label layoutX="326.0" layoutY="595.0" prefHeight="21.0" prefWidth="79.0" text="liste RDV" />
+      <Button fx:id="button_ajouter" layoutX="836.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#addClicked" prefHeight="43.0" prefWidth="122.0" text="Ajouter" />
+   </children>
+</AnchorPane>

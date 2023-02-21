@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor_doctor" prefHeight="218.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.pi.controller.OneDoctorController">
+   <children>
+      <Label layoutX="109.0" layoutY="38.0" prefHeight="21.0" prefWidth="72.0" text="Doctor" visible="false" />
+      <Label fx:id="label_idDoctor" layoutX="300.0" layoutY="38.0" text="idDoctor" visible="false" />
+      <Label layoutX="109.0" layoutY="69.0" text="FirstName" />
+      <Label layoutX="109.0" layoutY="109.0" text="Last Name" />
+      <Label layoutX="109.0" layoutY="145.0" text="Speciality" />
+      <Label fx:id="label_firstname" layoutX="300.0" layoutY="69.0" prefHeight="21.0" prefWidth="72.0" text="firstname" />
+      <Label fx:id="label_lastname" layoutX="300.0" layoutY="109.0" prefHeight="21.0" prefWidth="72.0" text="lastname" />
+      <Label fx:id="label_speciality" layoutX="300.0" layoutY="145.0" prefHeight="21.0" prefWidth="72.0" text="speciality" />
+   </children>
+</AnchorPane>
