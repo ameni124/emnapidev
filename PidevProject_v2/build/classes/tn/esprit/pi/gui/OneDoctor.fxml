@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor_doctor" prefHeight="218.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.pi.controller.OneDoctorController">
+   <children>
+      <Label layoutX="109.0" layoutY="38.0" prefHeight="21.0" prefWidth="72.0" text="Doctor" visible="false" />
+      <Label fx:id="label_idDoctor" layoutX="300.0" layoutY="38.0" text="idDoctor" visible="false" />
+      <Label layoutX="109.0" layoutY="10.0" text="FirstName">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="109.0" layoutY="46.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="87.0" text="Speciality">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="label_firstname" layoutX="300.0" layoutY="15.0" prefHeight="21.0" prefWidth="72.0" text="firstname" />
+      <Label fx:id="label_lastname" layoutX="300.0" layoutY="52.0" prefHeight="21.0" prefWidth="72.0" text="lastname" />
+      <Label fx:id="label_speciality" layoutX="300.0" layoutY="97.0" prefHeight="21.0" prefWidth="72.0" text="speciality" />
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="57.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/ic3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="67.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/ic1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="138.0" text="Phone">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="65.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/ic5.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
